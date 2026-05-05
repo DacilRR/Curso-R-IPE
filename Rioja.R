@@ -21,3 +21,5 @@ riojaPlot(poll, chron, selVars=selTaxa,
   addRPZoneNames(zones, xRight=0.9, cex=0.6)  |>
   addRPClustZone(clust, col="red") |>
   addRPClust(clust)
+
+Marcel
