@@ -1,0 +1,47 @@
+---
+title: "GitHub"
+format: html
+editor: visual
+---
+
+## Día 2 (5abril2026) / PARTE 3
+
+## Introducción GitHub
+
+Es una especie de bilbioteca o repositorio que tiene la gente para colaborar en códigos. Tiene un toque de red social como facebook en el que puedes seguir a otras personas.
+
+.gtignore es una carpeta que tiene archivos que no quieres que se vean. ej. Historia de R, etc. Puedes especificarle el formato de archivo que quieres que ignore. Ej. .pdf
+
+Archivo de licencia de uso. Normalmente se estructura con una carpeta de código, una de datos, una de documentos y otra de figuras. Puedes poner palabras clave, una descripción.. las estrellas son likes, watch te da las notificaciones, los contribuidores.
+
+Un commit es una especie de captura del Git en ese momento y se sube a la nube. Así se registran los cambios. Push es cuando lo subes a la nube y pull es cuando bajas los cambios que ha hecho otra persona.
+
+Hemos creado un nuevo repositorio público sin licencia. Pero la licencia más común es MIT.
+
+Cuando clonas el repositorio, lo guardas en tu ordenador. Lo puedes cambiar de sitio en tu ordenador.
+
+Ahora conectamos este repositorio con un proyecto de RStudio de control.
+
+```{r}
+library(tidyverse)
+dt <- penguins
+ggplot(dt, aes(x = body_mass, y = bill_len)) +
+  geom_point()
+```
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
